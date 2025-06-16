@@ -5,7 +5,55 @@
 
 <title>Les patrimoines de Dedougou</title>
 <link rel="stylesheet" href="arch.css">
+<style>
+#footer { 
+  text-align: center; 
+  margin-top: 20px; 
+  padding: 10px; 
+  background-color: blue; 
+  border-top: 1px solid #ccc; 
+}
 
+/* Images responsives */
+body img {
+  width: 100%;         /* occupe toute la largeur du conteneur parent */
+  max-width: 600px;    /* limite la taille max pour écrans larges */
+  height: auto;        /* hauteur automatique proportionnelle */
+  object-fit: cover;   /* rogne proprement l'image */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  display: block;      /* évite l'espace en bas des images inline */
+  margin: 0 auto;      /* centre horizontalement */
+}
+
+/* Titre centré */
+h1 {
+  text-align: center;
+}
+
+/* Bouton retour */
+.retour a {
+  display: inline-block; /* permet de gérer le padding et les dimensions */
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-style: italic;
+  vertical-align: top;  /* correction de text-valign */
+  text-align: left;
+  border: 5px solid #ccc; /* border-width fusionné directement */
+  border-radius: 2px;
+  background-color: red;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol pour améliorer l'UX */
+.retour a:hover {
+  background-color: darkred;
+  color: white;
+}
+</style>
 
 
 </head>
