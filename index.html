@@ -22,7 +22,103 @@
   height: 80%;             /* Taille du logo */
   width: auto;
 }
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: pink;
+    margin: 0;
+    padding: 0;
+} 
+ 
+#header { 
+    text-align: center; 
+    margin-bottom: 20px; 
+} 
+ 
+#COOL { 
+    text-align: center; 
+    margin-bottom: 20px; 
+} 
+ 
+#header img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+} 
+ 
+#nav ul { 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    text-align: center; 
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; 
+} 
+ 
+#nav ul li { 
+    display: inline; 
+    margin-right: 10px; 
+} 
+ 
+#nav ul li a { 
+    text-decoration: none; 
+    padding: 10px; 
+    color: #333; 
+    border: 1px solid transparent; 
+} 
+ 
+#nav ul li a:hover { 
+    background-color: #ddd; 
+    color: #000; 
+    border: 1px solid #333; 
+} 
+ 
+.container { 
+    display: flex; 
+    flex-wrap: wrap; /* ✅ Pour que ça passe à la ligne sur petit écran */
+} 
+ 
+.content { 
+    flex: 3; 
+    padding: 20px; 
+} 
+ 
+.news { 
+    flex: 1; 
+    padding: 20px; 
+    margin-left: 20px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+} 
+ 
+#footer { 
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: blue; 
+    color: white;
+    border-top: 1px solid #ccc; 
+}
 
+/* ✅ MEDIA QUERIES : mise en page mobile-friendly */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .news {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #header img {
+        height: 150px;
+    }
+
+    #nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
 
 
 
@@ -51,7 +147,7 @@
 <!-- Barre de Navigation Horizontale --> 
 <div  id ="nav" > 
 <ul> 
-<li><a href="index.html">Accueil</a></li> 
+<li><a href="#">Accueil</a></li> 
 <li><a href="Patrimoine.html">Patrimoine</a></li> 
 <li><a href="hotel.html">Reservation d'hotel</a></li> 
 <li><a href="galerie.html">Galerie</a></li> 
