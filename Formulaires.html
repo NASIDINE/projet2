@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Formulaires</title>
+
+</head>
+ <body>
+<h3><u><i><b><a href="accueil.html">RETURN</a></b></i></u></h3>
+
+<fieldset>
+
+<legend>Formulaires de réservation d'hotel</legend>
+<form name="formulaire" onsubmit="validerFormulaire(event)">
+
+<label><b>NOM:</b></label>
+<input type="text" name="NOM" required=""><br><br>
+
+<label><b>PRENOM:</b></label>
+<input type="text" name="PRENOM" required=""><br><br>
+
+<label><b>E-MAIL:</b></label>
+<input type="email" name="E-MAIL" required=""><br><br>
+
+<label><b>QUEL GENRE D'HOTEL VOULEZ VOUS?</b></label><br>
+<select name="types_d&#39;hotel" multiple="">
+<option value="Standard" selected="">Standard</option>
+<option value="VIP">VIP</option>
+<option value="Diamant">Diamant</option>
+</select><br>
+
+<label><b>VOULEZ VOUS AVEC PISCINE?</b></label><br>
+<select name="Piscine" multiple="">
+<option value="Pas de Piscine" selected="">Pas de Piscine</option>
+<option value="Avec Piscine">Avec Piscine</option>
+</select><br><br>
+
+<b><input type="submit" value="ENVOYER">
+
+
+</b></form></fieldset><b>
+
+</b></body></html>
