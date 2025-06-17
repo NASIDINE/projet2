@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head><title>Formulaires</title>
+<style>
+.retour a {
+    display: inline-block; /* permet de gérer le padding et les dimensions */
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-style: italic;
+  vertical-align: top;  /* correction de text-valign */
+  text-align: left;
+  border: 5px solid #ccc; /* border-width fusionné directement */
+  border-radius: 2px;
+  background-color: red;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+body{
+background-color:pink;
+}
+</style>
 <meta charset="UTF-8">
 </head>
  
 <body>
+<div class="retour"><a href="index.html">RETOUR</a></div>
 <fieldset>
 <legend>Formulaires de réservation d'hotel</legend>
 <form name="formulaire" onsubmit="validerFormulaire(event)">
