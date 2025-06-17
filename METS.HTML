@@ -3,8 +3,75 @@
 <head>
 <title>Eat together</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 
-<link rel="stylesheet" href="mets1.css">
+body{
+background-color:pink;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Images */
+body img {
+  margin: 10px;
+  height: 300px;
+  width: 30%; /* Affiche environ 3 images par ligne sur grand écran */
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Pied de page */
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: blue;
+  border-top: 1px solid #ccc;
+  color: white;
+}
+
+/* Bouton retour */
+.retour a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: red;
+  color: black;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* ✅ Responsive tablette */
+@media screen and (max-width: 768px) {
+  body img {
+    width: 45%;
+    height: auto;
+  }
+/* ✅ Responsive pour téléphone */
+@media screen and (max-width: 480px) {
+  body img {
+    width: 90%;
+  }
+
+  #footer {
+    font-size: 14px;
+  }
+
+  .retour a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+</style>
+
 </head>
 <body>
 <div class="retour"><a href="Patrimoine.html">RETOUR</a></div>

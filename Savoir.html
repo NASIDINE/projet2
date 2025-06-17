@@ -4,8 +4,88 @@
 <title>Mangement</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 
-<link rel="stylesheet" href="sav1.css">
+
+body{
+background-color:pink;
+
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* Images */
+body img {
+  margin: 40px;
+  height: auto;
+  width: 25%;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* Pied de page */
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: blue;
+  border-top: 1px solid #ccc;
+  color: white;
+}
+
+/* Bouton retour */
+.retour a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: red;
+  color: black;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* ✅ Responsive tablette */
+@media screen and (max-width: 768px) {
+  body img {
+    width: 45%;
+    height: auto;
+  }
+
+  .retour a {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+
+/* ✅ Responsive téléphone */
+@media screen and (max-width: 480px) {
+  body img {
+    width: 90%;
+    height: auto;
+  }
+
+  .retour a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #footer {
+    font-size: 14px;
+  }
+}
+
+</style>
+
 </head>
 
 <body>

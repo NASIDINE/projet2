@@ -3,8 +3,86 @@
 <head>
 <title>Rond Poind Nazi Boni</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+background-color:pink;
 
-<link rel="stylesheet"href="nazi1.css">
+}
+
+
+
+
+h1 {
+  text-align: center;
+}
+
+/* Galerie d'images */
+body img {
+  display: inline-block;
+  margin: 10px;
+  height: auto;
+  width: 30%;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+/* Bouton retour */
+.retour a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: red;
+  color: black;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Pied de page */
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: blue;
+  border-top: 1px solid #ccc;
+  color: white;
+}
+
+/* ✅ Responsive pour tablette */
+@media screen and (max-width: 768px) {
+  body img {
+    width: 45%;
+  }
+
+  .retour a {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+
+/* ✅ Responsive pour téléphone */
+@media screen and (max-width: 480px) {
+  body img {
+    width: 90%;
+  }
+
+  #footer {
+    font-size: 14px;
+  }
+
+  .retour a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+</style>
+
 </head>
 <body>
 <div class="retour"><a href="Patrimoine.html">RETOUR</a></div>

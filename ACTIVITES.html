@@ -5,7 +5,64 @@
   <title>Mangement</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="festi.css">
+  <style>
+
+body{
+background-color:pink;
+}
+
+body img {
+  width: 25%;
+  height: 200px; 
+  object-fit: cover; 
+  margin: 30px;
+  display: inline-block; /* Pour aligner plusieurs images sur une même ligne */
+  vertical-align: top;
+}
+
+h2 {
+  /* display: online;  --> ce n’est pas une valeur CSS valide, je l’ai supprimée */
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#footer { 
+  text-align: center; 
+  margin-top: 20px; 
+  padding: 10px; 
+  background-color: blue; 
+  border-top: 1px solid #ccc; 
+  color: white;
+}
+
+/* Responsive pour tablettes */
+@media screen and (max-width: 768px) {
+  body img {
+    width: 45%;
+    height: auto;
+  }
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .retour a {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+/* Responsive pour mobiles */
+@media screen and (max-width: 480px) {
+  body img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+</style>
 </head>
 
 <body>

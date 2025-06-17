@@ -2,12 +2,71 @@
 <html>
 <head>
 <title>photo</title>
+<style>
+body{
+background-color:pink;
+}
 
+ h2{
+  text-align:center;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+  gap: 20px; /* espace entre les images */
+  margin-bottom: 40px;
+}
+
+.galerie img {
+  width: 100%;      /* occupe toute la colonne */
+  height: 200px;    /* hauteur uniforme */
+  object-fit: cover; /* rogne proprement l'image pour remplir le cadre */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+.retour a {
+text-decoration:none;
+padding: 10px 20px;
+font-weight: bold;
+    font-style: italic;
+text-valign:top;
+text-align:left;
+border: 2px solid #ccc;
+  border-radius: 2px;
+background-color  :red;
+color:black;
+border-width:5px;
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .retour a {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+#footer { 
+  text-align: center; 
+  margin-top: 20px; 
+  padding: 10px; 
+  background-color: blue; 
+  border-top: 1px solid #ccc; 
+}
+
+</style>
 
 
 </head>
 <body>
-<div class="retour"><a href="accueil.html">RETOUR</a></div>
+<div class="retour"><a href="index.html">RETOUR</a></div>
 <div class="galerie">
 <h2> PALAIS ROYALE    </h2>
 <img src="pal1.jpg">
